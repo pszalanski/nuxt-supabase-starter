@@ -3,9 +3,9 @@ const user = useSupabaseUser()
 
 watch(user, () => {
   if (user.value) {
-    return navigateTo('/dashboard')
+    return navigateTo('/')
   }
-}, { immediate: true })
+}, {immediate: true})
 </script>
 
 <template>
